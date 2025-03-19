@@ -8,7 +8,7 @@ function App() {
   const [fade, setFade] = useState(false);
 
 
-  
+
   const [allowNumber, setAllowNumber] = useState(false);
   const [allowCharecter, setAllowCharacter] = useState(false);
 
@@ -16,6 +16,7 @@ function App() {
 
   const passwordReffrence = useRef(null);
 
+  
   const passwordCopyToClipBoard = useCallback(() => {
     passwordReffrence.current?.select();
     window.navigator.clipboard.writeText(password);
